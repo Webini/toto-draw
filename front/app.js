@@ -1,1 +1,3 @@
-console.debug('Yolo');
+const paper = require('paper');
+
+console.debug(paper);

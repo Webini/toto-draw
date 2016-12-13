@@ -15,10 +15,18 @@ module.exports = {
   },
   module: {
     loaders: [
-    ],
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
+    ]
   },
   plugins: [ 
     new webpack.optimize.UglifyJsPlugin({
+      output: {
+        ascii_only: true
+      },
       preserveComments: false,
       compress: {
         drop_debugger: true,
