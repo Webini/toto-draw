@@ -1,1 +1,1 @@
-console.debug('Yolo'); 
+console.debug('Yolo');
